@@ -55,7 +55,7 @@ Note :
 -	Le choix n’a pas d’influence sur la précision de l’horloge. Le bruit produit par l’avancée de l’aiguille est différent selon le mode (un ‘clac’, ou bien un double ‘clac’ mais deux fois moins fréquent).
 
 ## Programmation du microcontroleur :
--	Le code est disponible à l’adresse suivante https://github.com/pinderschloss/horlogeImpulsionATTINY/
+-	Le code est disponible à l’adresse suivante https://github.com/pinderschloss/horlogeImpulsion/
 -	Platine et code sont prévus pour fonctionner avec les microcontrôleurs ATTINYx5-20PU (x5 : 25 ou 45 ou 85) d’ATMEL. La consommation d'énergie est réduite autant que possible.
 -	La programmation du microcontrôleur peut se faire par une carte arduino par exemple (chercher Arduino ISP).
 -	Le code est adaptable pour fonctionner avec des horloges nécessitant des signaux différents (par exemple une impulsion toutes les minutes, polarité inversée entre deux impusions).
