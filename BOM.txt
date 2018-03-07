@@ -1,0 +1,10 @@
+Le projet a été développé avec le matériel suivant:
+-  1x ATTINY85-20PU (version DIP8, ATTINY25 et ATTINY45 conviennent aussi)
+-  1x DS1307 (RTC de Maxim Integrated) sur une breakout board. Le DS3231 utilise le même protocole.
+-  1x support de pile 2xAA
+-  1x pont en H sur une breakout board. Ce pont est basé sur un L9110S. Tout autre pont doit convenir. La diode a été supprimée pour économiser les piles.
+-  1x condensateur
+-  1x interrupteur momentané (à poussoir)
+-  2x interrupteurs à bascule
+-  des conducteurs électriques
+-  1x mini breaboard
