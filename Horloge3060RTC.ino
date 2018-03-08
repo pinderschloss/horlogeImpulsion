@@ -1,8 +1,7 @@
 #define F_CPU 1000000  // This is used by delay.h library
  
-#include <stdlib.h>
- 
-#include <avr/io.h>        // Adds useful constants
+#include <stdlib.h> 
+#include <avr/io.h>        // Des constantes utiles
   
 #include <avr/sleep.h>
 #include <avr/interrupt.h>
@@ -26,9 +25,9 @@
 #define step30 3 // Attiny85 pin physique 2
 #define step60 4 // Attiny85 pin physique 3
 
-#define d30 400   // Durée impulsion '30s' en millisecondes
-#define d60 400   // Durée impulsion '60s' en millisecondes
-#define d3060 500 // Durée pause entre impulsions '30s' et '60s' en millisecondes
+#define d30 150   // Durée impulsion '30s' en millisecondes
+#define d60 150   // Durée impulsion '60s' en millisecondes
+#define d3060 250 // Durée pause entre impulsions '30s' et '60s' en millisecondes
 
 // Adresse I2C real time clock (RTC) du module DS1307 ou compatible
 #define DS1307_ADDR   0x68              
@@ -63,7 +62,6 @@ byte lireSec(){
 //  for (byte i=0;i<(wireRet);i++){digitalWrite(step30,HIGH);delay(100);digitalWrite(step30,LOW);delay(100);}
   return wireRet;  // handle the byte received
 }
-
 byte bcdToDec(byte val) {               // Convertir binaire codé décimal en nombre décimal
   return ((val / 16 * 10) + (val % 16));
 }
@@ -81,16 +79,13 @@ void setup() {
   pinMode(mode30, INPUT);
   // initialise I2C
   TinyWireM.begin();
-  system_sleep();  // On patiente
+  delay(1000);  // On patiente
 
   // reinitialise DS1307 
   TinyWireM.beginTransmission(DS1307_ADDR); 
   TinyWireM.send(0x00);
-  // Ecrit une heure/date fantaisiste
-  // cela démarre le module automatiquement s'il était bloqué, par exemple:
-  // - après un changement de pile du module,
-  // - un changement de pile de la platine lorsque le module RTC n'a pas de pile
-  // - l'installation d'un module RTC non initialisé
+  // ecrit une heure/date fantaisiste
+  // cela démarre le module automatiquement s'il était bloqué
   TinyWireM.send(0x02);
   TinyWireM.send(0x02);
   TinyWireM.send(0x02);
@@ -130,13 +125,14 @@ void lireAvance() {
   }
 }
 
+// the loop function runs over and over again forever
 void loop() {
   if (f_wdt==1) {  // wait for timed out watchdog / flag is set when a watchdog timeout occurs
     f_wdt=0;       // reset flag
     // Détermine si l'utilisateur appuie sur le bouton d'avance rapide
     lireAvance();
 
-    if (eco>=5) { // Attend environ 10 secondes
+    if (eco>12) { // Attend environ (12+1)*2s=26 secondes
       // Se renseigne sur l'heure précise
       secAct=lireSec();
   
@@ -192,15 +188,22 @@ void avance3060() {
 // set system into the sleep state 
 // system wakes up when wtchdog is timed out
 void system_sleep() {
+  
+ 
   set_sleep_mode(SLEEP_MODE_PWR_DOWN); // sleep mode is set here
   sleep_enable();
+ 
   sleep_mode();                        // System actually sleeps here
-  sleep_disable();                     // System continues execution here when watchdog timed out  
+ 
+  sleep_disable();                     // System continues execution here when watchdog timed out 
+  
+  
 }
  
 // 0=16ms, 1=32ms,2=64ms,3=128ms,4=250ms,5=500ms
 // 6=1 sec,7=2 sec, 8=4 sec, 9= 8sec
 void setup_watchdog(int ii) {
+ 
   byte bb;
   int ww;
   if (ii > 9 ) ii=9;
