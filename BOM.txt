@@ -5,6 +5,6 @@ Le projet a été développé avec le matériel suivant:
 -  1x pont en H sur une breakout board. Ce pont est basé sur un L9110S. Tout autre pont doit convenir. La diode a été supprimée pour économiser les piles.
 -  1x condensateur
 -  1x interrupteur momentané (à poussoir)
--  2x interrupteurs à bascule
+-  2x interrupteurs à bascule (bistables)
 -  des conducteurs électriques
--  1x mini breaboard
+-  1x mini breadboard
