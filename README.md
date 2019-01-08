@@ -1,3 +1,4 @@
+https://bit.ly/2SEGcSN
 # horlogeImpulsionATTINY
 Contrôler une horloge Brillié à impulsions électriques alternées (2 impulsions par minute).
 
