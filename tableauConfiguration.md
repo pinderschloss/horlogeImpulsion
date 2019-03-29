@@ -3,7 +3,7 @@
 Cette partie détaille les différences entre les configurations matérielles pour la platine. La partie commune à toutes les platines est décrite dans BOM.txt. Ce fichier comprend aussi les différents éléments spécifiques listés ci-dessous, mais sans explications.
 
 ## Tensions:
-Alimentation du module: Vc (doit être comprise entre 3V et 5V)
+Alimentation du module: _Vc_ (doit être comprise entre 3V et 5V)
 Tension de fonctionnement de l'horloge: VP (doit être comprise entre Vc et 36V)
 
 - Si VP = Vc : pas de module élévateur de tension
