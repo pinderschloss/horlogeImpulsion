@@ -8,7 +8,7 @@ Le projet a été développé avec le matériel suivant (commum à toutes les ve
    - Il est recommandé d'utiliser la dernière version.
    - Ne pas utiliser les versions antérieures à la V5.
 
-Suivant les versions (se référer à pour les explications):
+Suivant les versions (se référer à tableauConfiguration.md pour les explications):
 -  *C* : 1x condensateur radial, diamètre 5mm (facultatif, valeur peu importante). Peut-être remplacé par un autre format.
 -  *monopolaire* : 1x bornier pas 2.54mm avec 2 ou 3 bornes, ou bien un bornier pas 5.08mm à 2 bornes
 -  *VPGNDVc* : 1x bornier pas 2.54mm avec 2 ou 3 bornes
