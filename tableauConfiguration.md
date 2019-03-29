@@ -49,6 +49,6 @@ Pour cela, prévoir:
 On peut installer l'*interrupteur* pour la partie commande (**Vc**). C'est un interrupteur facultatif. S'il n'est pas installé, faire un pont de soudure sur *JP2*.
 
 ## Bouton poussoir de réglage
-Si on n'utilise pas le bouton poussoir *Reglage* prévu (soudé sur la platine par 4 points):
+Si on ne souhaite pas utiliser le bouton poussoir *Reglage* prévu (soudé sur la platine par 4 points):
 - ne pas l'installer
-- utilise un bouton poussoir déporté et le raccorder à la platine sur un des deux points qui sont le long du bord (**SQW**), et un des deux points qui sont près de *DRL1* (**GND**).
+- prévoir un bouton poussoir déporté et le raccorder à la platine sur un des deux points qui sont le long du bord (**SQW**), et un des deux points qui sont près de *DRL1* (**GND**).
