@@ -39,6 +39,7 @@ Si:
 - on souhaite une alimentation autonome (pile, batterie) et non pas alimenté sur le secteur,
 - et on a besoin de l'élévateur de tension, 
 On peut avoir plus d'autonomie en économisant l'énergie dissipée par l'élévateur de tension au repos.
+
 Pour cela, prévoir:
 - un shunt (j'utilise une résistance d'une centaine d'ohm, un fil conviendra)
 - pour les horloges à impulsions alternées: deux diodes *DS1* et *DS2*.
