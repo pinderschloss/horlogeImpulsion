@@ -1,0 +1,543 @@
+EESchema Schematic File Version 4
+LIBS:platine-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU Microcontroleur1
+U 1 1 5C3237FD
+P 3550 3000
+F 0 "Microcontroleur1" H 3020 3046 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 3020 2955 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3550 3000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 3550 3000 50  0001 C CNN
+	1    3550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male RTC1
+U 1 1 5C323A3E
+P 5600 2850
+F 0 "RTC1" H 5573 2823 50  0000 R CNN
+F 1 "fiches2.54" H 5573 2732 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5600 2850 50  0001 C CNN
+F 3 "~" H 5600 2850 50  0001 C CNN
+	1    5600 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 Alimentation1
+U 1 1 5C323B68
+P 1100 3750
+F 0 "Alimentation1" H 1020 4067 50  0000 C CNN
+F 1 "bornier 3x2.54" H 1020 3976 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 1100 3750 50  0001 C CNN
+F 3 "~" H 1100 3750 50  0001 C CNN
+	1    1100 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push Reglage1
+U 1 1 5C323D94
+P 6300 3450
+F 0 "Reglage1" H 6300 3735 50  0000 C CNN
+F 1 "Inter-pousser" H 6300 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 6300 3650 50  0001 C CNN
+F 3 "" H 6300 3650 50  0001 C CNN
+	1    6300 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 monopolaire1
+U 1 1 5C336A42
+P 5600 3900
+F 0 "monopolaire1" H 5680 3942 50  0000 L CNN
+F 1 "bornier 3x2.54" H 5680 3851 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 5600 3900 50  0001 C CNN
+F 3 "~" H 5600 3900 50  0001 C CNN
+	1    5600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_EBC T1
+U 1 1 5C33762D
+P 4800 4450
+F 0 "T1" H 4991 4496 50  0000 L CNN
+F 1 "NPN" H 4991 4405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3_Window" H 5000 4550 50  0001 C CNN
+F 3 "~" H 4800 4450 50  0001 C CNN
+	1    4800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D DRL1
+U 1 1 5C3376B0
+P 4750 4050
+F 0 "DRL1" V 4796 3922 50  0000 R CNN
+F 1 "Roue libre" V 4705 3922 50  0000 R CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 4750 4050 50  0001 C CNN
+F 3 "~" H 4750 4050 50  0001 C CNN
+	1    4750 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male PontH1
+U 1 1 5C3377B8
+P 5600 2150
+F 0 "PontH1" H 5573 2123 50  0000 R CNN
+F 1 "Fiches2.54" H 5573 2032 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5600 2150 50  0001 C CNN
+F 3 "~" H 5600 2150 50  0001 C CNN
+	1    5600 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5C337FB7
+P 2350 2400
+F 0 "SW1" H 2350 2685 50  0000 C CNN
+F 1 "Inter-controle" H 2350 2594 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2350 2400 50  0001 C CNN
+F 3 "" H 2350 2400 50  0001 C CNN
+	1    2350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5C3384D0
+P 4500 4450
+F 0 "R1" V 4304 4450 50  0000 C CNN
+F 1 "1200" V 4395 4450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 4500 4450 50  0001 C CNN
+F 3 "~" H 4500 4450 50  0001 C CNN
+	1    4500 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C-controle1
+U 1 1 5C336E28
+P 1850 3500
+F 0 "C-controle1" H 1968 3546 50  0000 L CNN
+F 1 "condensateur" H 1968 3455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1888 3350 50  0001 C CNN
+F 3 "~" H 1850 3500 50  0001 C CNN
+	1    1850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3750 1300 3750
+Wire Wire Line
+	1850 3750 3550 3750
+Connection ~ 1850 3750
+Wire Wire Line
+	1300 3650 1600 3650
+Wire Wire Line
+	1850 3650 1850 3750
+Wire Wire Line
+	1300 3850 1850 3850
+Wire Wire Line
+	5400 3800 5400 3850
+Wire Wire Line
+	3550 3750 3550 3600
+Connection ~ 3550 3750
+Wire Wire Line
+	5000 2150 5000 2350
+Wire Wire Line
+	5000 3750 3550 3750
+Wire Wire Line
+	5400 2250 5100 2250
+Wire Wire Line
+	5100 2250 5100 2000
+Wire Wire Line
+	5100 2000 4900 2000
+Wire Wire Line
+	3550 4700 3800 4700
+Wire Wire Line
+	5400 2650 5000 2650
+Connection ~ 5000 2650
+Wire Wire Line
+	5000 2650 5000 3650
+Wire Wire Line
+	5400 2750 4900 2750
+Wire Wire Line
+	4900 2750 4900 2000
+Connection ~ 4900 2000
+Wire Wire Line
+	5400 2850 4800 2850
+Wire Wire Line
+	4800 2850 4800 2700
+Wire Wire Line
+	4800 2700 4150 2700
+Wire Wire Line
+	4700 2950 4700 2900
+NoConn ~ 5400 3150
+Wire Wire Line
+	5400 3050 4600 3050
+Wire Wire Line
+	4600 3050 4600 2800
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C353E41
+P 3800 4700
+F 0 "#FLG0101" H 3800 4775 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 4874 50  0000 C CNN
+F 2 "" H 3800 4700 50  0001 C CNN
+F 3 "~" H 3800 4700 50  0001 C CNN
+	1    3800 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 4700
+Wire Wire Line
+	3800 4700 4900 4700
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C353FD5
+P 1800 1250
+F 0 "#FLG0102" H 1800 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 1424 50  0000 C CNN
+F 2 "" H 1800 1250 50  0001 C CNN
+F 3 "~" H 1800 1250 50  0001 C CNN
+	1    1800 1250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4150 3200
+$Comp
+L lib-projet:USB-x-tension U1
+U 1 1 5C348C15
+P 3200 1300
+F 0 "U1" H 3200 1615 50  0000 C CNN
+F 1 "USB-x-tension" H 3200 1524 50  0000 C CNN
+F 2 "libdediee:USB-x-tension-module" H 3150 1350 50  0001 C CNN
+F 3 "" H 3150 1350 50  0001 C CNN
+	1    3200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1250 1800 1250
+Connection ~ 1600 2400
+Wire Wire Line
+	1600 2400 1600 2650
+Wire Wire Line
+	3750 1250 3750 800 
+Wire Wire Line
+	3750 800  900  800 
+Wire Wire Line
+	900  4250 1850 4250
+Wire Wire Line
+	900  800  900  4250
+Wire Wire Line
+	3200 1700 4000 1700
+Wire Wire Line
+	4000 1700 4000 700 
+Wire Wire Line
+	4000 700  750  700 
+Wire Wire Line
+	750  700  750  4700
+Connection ~ 3550 4700
+Wire Wire Line
+	3550 3750 3550 4700
+Connection ~ 5400 3850
+Wire Wire Line
+	5400 3850 5400 3900
+Text Label 5250 2850 0    50   ~ 0
+SDA
+Text Label 5250 2950 0    50   ~ 0
+SDL
+Text Label 5250 3050 0    50   ~ 0
+SQW
+Text Label 5250 2750 0    50   ~ 0
+Vc+
+Text Label 5250 2650 0    50   ~ 0
+GND
+Text Label 1350 3850 0    50   ~ 0
+VP+
+Text Label 5200 1950 0    50   ~ 0
+B-1A
+Text Label 5200 2050 0    50   ~ 0
+B-1B
+Text Label 5200 2350 0    50   ~ 0
+A-1A
+Text Label 5200 2450 0    50   ~ 0
+A-1B
+Text Label 4150 2900 0    50   ~ 0
+SCL-INT0
+Text Label 4650 4450 0    50   ~ 0
+B
+Text Label 4950 4200 0    50   ~ 0
+C
+Text Label 5200 4000 0    50   ~ 0
+BLANC
+Wire Wire Line
+	4150 3100 4400 3100
+Wire Wire Line
+	4150 2900 4700 2900
+Wire Wire Line
+	4750 4250 4900 4250
+Connection ~ 4900 4250
+Wire Wire Line
+	4400 3100 4400 4450
+Wire Wire Line
+	4900 4650 4900 4700
+Wire Wire Line
+	4900 4250 5400 4250
+Wire Wire Line
+	5400 4250 5400 4000
+Wire Wire Line
+	750  4700 3550 4700
+Wire Wire Line
+	1850 3850 1850 4250
+Wire Wire Line
+	2550 2300 2550 2000
+Wire Wire Line
+	2550 2300 2800 2300
+Wire Wire Line
+	3550 2300 3550 2400
+Connection ~ 2550 2300
+Wire Wire Line
+	1600 2400 2150 2400
+Wire Wire Line
+	1850 3350 1850 2800
+Wire Wire Line
+	1850 2800 2800 2800
+Wire Wire Line
+	2800 2800 2800 2300
+Connection ~ 2800 2300
+Wire Wire Line
+	2800 2300 3550 2300
+Connection ~ 1800 1250
+Wire Wire Line
+	1800 1250 1600 1250
+Wire Wire Line
+	2550 2000 3700 2000
+Connection ~ 1850 3850
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5C772E81
+P 1900 5600
+F 0 "JP1" H 1900 5805 50  0000 C CNN
+F 1 "x-tension-permanent" H 1900 5714 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1900 5600 50  0001 C CNN
+F 3 "~" H 1900 5600 50  0001 C CNN
+	1    1900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1
+U 1 1 5C7733E8
+P 1000 5600
+F 0 "J1" H 1106 5778 50  0000 C CNN
+F 1 "enable-x-tension" H 1106 5687 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1000 5600 50  0001 C CNN
+F 3 "~" H 1000 5600 50  0001 C CNN
+	1    1000 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2800 2800 5600
+Wire Wire Line
+	2800 5600 2050 5600
+Connection ~ 2800 2800
+Wire Wire Line
+	1750 5600 1350 5600
+$Comp
+L Device:D DS1
+U 1 1 5C78044B
+P 1900 6050
+F 0 "DS1" H 1900 5950 50  0000 C CNN
+F 1 "DIODE" H 1900 6150 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 1900 6050 50  0001 C CNN
+F 3 "~" H 1900 6050 50  0001 C CNN
+	1    1900 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D DS2
+U 1 1 5C780551
+P 1900 6550
+F 0 "DS2" H 1900 6450 50  0000 C CNN
+F 1 "DIODE" H 1900 6650 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 1900 6550 50  0001 C CNN
+F 3 "~" H 1900 6550 50  0001 C CNN
+	1    1900 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5600 1350 6050
+Connection ~ 1350 5600
+Wire Wire Line
+	1350 5600 1200 5600
+Wire Wire Line
+	1350 6050 1350 6550
+Connection ~ 1350 6050
+Wire Wire Line
+	4400 4450 4400 6050
+Connection ~ 4400 4450
+Wire Wire Line
+	4250 3000 4250 6550
+Wire Wire Line
+	4250 3000 4150 3000
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5C79045E
+P 3700 2000
+F 0 "#FLG0103" H 3700 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3700 2174 50  0000 C CNN
+F 2 "" H 3700 2000 50  0001 C CNN
+F 3 "~" H 3700 2000 50  0001 C CNN
+	1    3700 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3700 2000
+Wire Wire Line
+	3700 2000 4900 2000
+Wire Wire Line
+	2550 2500 2550 2650
+Wire Wire Line
+	2550 2650 1600 2650
+Connection ~ 1600 2650
+Wire Wire Line
+	1600 2650 1600 3650
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5C792EE3
+P 2350 1800
+F 0 "JP2" H 2350 2005 50  0000 C CNN
+F 1 "alim_controle_permanente" H 2350 1914 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 1800 50  0001 C CNN
+F 3 "~" H 2350 1800 50  0001 C CNN
+	1    2350 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1800 1600 1800
+Wire Wire Line
+	1600 1250 1600 1800
+Connection ~ 1600 1800
+Wire Wire Line
+	1600 1800 1600 2400
+Wire Wire Line
+	2500 1800 2550 1800
+Wire Wire Line
+	2550 1800 2550 2000
+Connection ~ 2550 2000
+$Bitmap
+Pos 5000 1200
+Scale 1.000000
+Data
+89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 00 4A 00 00 00 4A 08 02 00 00 00 93 B2 55 
+26 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 01 FE 49 44 41 54 78 9C ED 9A DB 6E 84 30 
+0C 44 4B D5 FF FF 65 FA 10 AD 64 69 34 DE E3 C0 AA 25 F1 79 5A 05 27 04 A6 BE 91 1E E7 79 7E AD 
+CB F7 5F 6F E0 B3 F4 E3 3D 99 7E BC 27 D3 8F F7 64 7E DC 85 E3 38 E0 12 31 73 8E 59 6E 84 AC A9 
+73 AB 7B 88 EC AA DE 20 AF 69 E2 DB 75 6F 5A 75 23 6B 46 1B BE 07 65 6F F5 06 FA 86 F4 8D 72 9F 
+C9 FD F3 CA 1E 94 56 8F C1 A3 9C B3 27 1A 56 69 F5 2A DC 9B 03 AF D3 EA 31 7F 88 9A A8 BD 8B 7B 
+9A 0F DD 0A 73 3E B9 B7 7A DC 43 D4 AF DC 6F 67 7F 7D 0F CA E2 EA 1D 77 E5 99 BC E6 54 CB DC 3F 
+EF DA D5 E2 EA 21 DF CB 3D 44 AB FB 6A 7E 53 7B 17 51 DD 5D 1C 7B AB A7 E4 BE E4 7E AB BD CE D5 
+BB 38 E5 79 2C 6D F5 5E 10 BF 72 9E C0 FB 03 9E 21 BB DF 9B CD 7B 5C 43 52 6D EA 2C 72 5F 37 12 
+D9 55 3D A2 CF 75 0D F5 8E 4A 75 9D C8 E2 EA 5D EA D6 49 F5 E0 BC A5 AA 27 C9 A8 CA E2 EA BD 89 
+9C BC CB 76 B3 48 07 48 AA 1C 67 B3 75 E4 7C 73 42 C4 73 54 5E E3 E7 E4 55 A8 AB 63 DC 4E 22 BB 
+AA 37 E0 A7 05 55 9F 74 96 73 A7 4E 8E 5D D5 CB 23 55 B4 89 E3 6E D6 5C CC D4 B9 3A 9E B3 AB 7A 
+03 A2 86 23 EF B5 B9 6E FA DB AD A6 2C AE 5E A1 DF E3 7D 43 F5 1B 26 F1 F0 39 BF 5D 5C BD C9 8E 
+81 7F CF E4 3A A8 BD 8E 54 CF 1B 5A BD 17 E4 CC 8D C4 C0 01 8F 99 D1 3E 1F 51 76 55 8F FF 95 BB 
+9A 33 5E E5 A7 B6 7A 35 AF 7E 72 76 55 6F C0 7B 79 9E BB 74 A4 DA 55 F2 5C BD B7 7A 83 B9 6A 9D 
+D7 AB 3C 2A 92 DE 25 D2 EA D5 71 EF 95 67 39 5D 6D AE EB 6B F5 18 BC 86 24 5D BC 5A 3A 9B EE 18 
+DE C1 4F DE F2 91 38 9E C7 52 A7 6A F5 6B EA DE EA 55 2B CF 7C 56 F5 2C 91 E8 B3 75 E4 BC ED 7F 
+CA FE 27 8B AB D7 8F F7 64 FA F1 9E 4C 3F DE 93 F9 05 C0 72 28 D3 37 25 DC 2B 00 00 00 00 49 45 
+4E 44 AE 42 60 82 
+EndData
+$EndBitmap
+Wire Wire Line
+	4150 2800 4600 2800
+Wire Wire Line
+	6300 3250 4600 3250
+Wire Wire Line
+	4600 3250 4600 3050
+Connection ~ 4600 3050
+Wire Wire Line
+	6300 3650 5000 3650
+Connection ~ 5000 3650
+Wire Wire Line
+	5000 3650 5000 3750
+Wire Wire Line
+	1850 3850 4750 3850
+Wire Wire Line
+	4750 4200 4750 4250
+Wire Wire Line
+	4750 3900 4750 3850
+Connection ~ 4750 3850
+Wire Wire Line
+	4750 3850 5400 3850
+Wire Wire Line
+	2050 6050 4400 6050
+Wire Wire Line
+	1350 6050 1750 6050
+Wire Wire Line
+	1350 6550 1750 6550
+Wire Wire Line
+	2050 6550 4250 6550
+Text Label 5000 4700 0    50   ~ 0
+E
+Connection ~ 5000 2450
+Wire Wire Line
+	5000 2450 5000 2650
+Connection ~ 5000 2350
+Wire Wire Line
+	5000 2350 5000 2450
+Wire Wire Line
+	5000 2350 5400 2350
+Wire Wire Line
+	5000 2450 5400 2450
+Wire Wire Line
+	5000 2150 5400 2150
+Wire Wire Line
+	5050 1950 5400 1950
+Wire Wire Line
+	5150 2050 5400 2050
+Text Label 4150 2800 0    50   ~ 0
+Reveil
+Text GLabel 3550 4050 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5400 2950 4700 2950
+Wire Wire Line
+	4250 3000 5150 3000
+Wire Wire Line
+	5150 3000 5150 2050
+Connection ~ 4250 3000
+Wire Wire Line
+	5050 1950 5050 3100
+Wire Wire Line
+	5050 3100 4400 3100
+Connection ~ 4400 3100
+Text GLabel 4400 3550 0    50   Input ~ 0
+S1
+Text GLabel 4250 3400 0    50   Input ~ 0
+S2
+$Comp
+L Jumper:SolderJumper_2_Open JPS1
+U 1 1 5C92C735
+P 1900 6250
+F 0 "JPS1" H 2300 6250 50  0000 C CNN
+F 1 "monoP" H 2550 6250 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1900 6250 50  0001 C CNN
+F 3 "~" H 1900 6250 50  0001 C CNN
+	1    1900 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6250 2050 6050
+Connection ~ 2050 6050
+Wire Wire Line
+	1750 6250 1750 6050
+Connection ~ 1750 6050
+$EndSCHEMATC

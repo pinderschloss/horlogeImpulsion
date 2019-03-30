@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP USB-x-tension
+D module convertisseur tension USB ou Vin vers [2V-30V]
+$ENDCMP
+#
+#End Doc Library
