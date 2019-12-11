@@ -8,15 +8,7 @@ Le projet a été développé avec le matériel suivant (commum à toutes les ve
    - Il est recommandé d'utiliser la dernière version.
    - Ne pas utiliser les versions antérieures à la V5.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Suivant les versions (se référer à tableauConfiguration.md pour les explications):
-=======
-Suivant les versions (se référer à pour les explications):
->>>>>>> 44e22f5... Update BOM.md
-=======
-Suivant les versions (se référer à tableauConfiguration.md pour les explications):
->>>>>>> 8b820de... Update BOM.md
 -  *C* : 1x condensateur radial, diamètre 5mm (facultatif, valeur peu importante). Peut-être remplacé par un autre format.
 -  *monopolaire* : 1x bornier pas 2.54mm avec 2 ou 3 bornes, ou bien un bornier pas 5.08mm à 2 bornes
 -  *VPGNDVc* : 1x bornier pas 2.54mm avec 2 ou 3 bornes
@@ -30,6 +22,6 @@ Suivant les versions (se référer à tableauConfiguration.md pour les explicati
 -  *R1* : 1x résistance d'environ 1200 ohms
 -  *T1* : 1x transistor NPN en package TO-90, par exemple BD259. Tout autre NPN devrait convenir s'il supporte la tension **VP**, et que ses pattes peuvent être soudées à la bonne place.
 -  *DS1* et *DS2* : 2x diodes standard type 1N4001
--  *DRL1* : 1x diodes standard type 1N4001
+-  *DRL1* : 1x diode standard type 1N4001
 -  1x support de pile 2xAA
 -  1x alimentation microUSB
