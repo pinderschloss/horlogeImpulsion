@@ -19,6 +19,7 @@ Suivant les versions (se référer à tableauConfiguration.md pour les explicati
 -  *Reglage*: 1x interrupteur momentané (à poussoir)
 -  *interrupteur* : 1x interrupteur à glissière (bistable)
 -  *x-tension* : 1x module élévateur de tension
+-  *ENABLE x-tension* : 1x résistance plutôt faible (par exemple 100 ohms ou moins) pour relier la patte ENABLE de l'élévateur de tension à la commande d'impulsion
 -  *R1* : 1x résistance d'environ 1200 ohms
 -  *T1* : 1x transistor NPN en package TO-90, par exemple BD259. Tout autre NPN devrait convenir s'il supporte la tension **VP**, et que ses pattes peuvent être soudées à la bonne place.
 -  *DS1* et *DS2* : 2x diodes standard type 1N4001
